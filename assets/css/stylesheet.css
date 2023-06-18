@@ -1,0 +1,269 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: black;
+    font-size: 1.1em;
+}
+
+header {
+    font-size: 143%;
+    background-image: linear-gradient(30deg, #691111, black);
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    margin-bottom: 16px;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 10vh;
+    padding-bottom: 11vh;
+    line-height: 2em;
+    
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.normal > h1, section.normal > p {
+    padding: 10px;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 2px 2px 13px 1px rgba(0, 0, 0, 0.613);
+
+}
+
+section.imagem > p, section.imagem > h1{
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.38);
+    padding: 10px;
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section#img-01 {
+    background-image: url('../img/bd_poesias02.jpg');
+    background-size: cover;
+}
+
+section#img-02 {
+    background-image: url('../img/bd_poesias03.jpg');
+    background-size: cover;
+}
+
+section#img-03 {
+    background-image: url('../img/bd_poesias01.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    display: inline-flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#bg-footer {
+    background-color: black;
+}
+
+footer {
+    display: -webkit-box;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 11px;
+    font-size: 0.9em;
+}
+
+
+div > h2 {
+    margin-bottom: 10px;
+}
+
+footer > div{
+    color: rgb(199, 199, 199);
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+footer > div > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer > div > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer > div > ul > li {
+    display: inline-block;
+    margin: 0 10px;
+    color: azure;
+}
+
+footer > div > ul > li > a {
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+footer > div > ul > li::before {
+    content: "-";
+    margin-right: 5px;
+}
+
+footer > div > ul > li > a:hover {
+    color: aliceblue;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+.container-text-1 {
+    background-color: #cfc7c782;
+    width: 70vw;
+    padding: 3% 0%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.container-text-1 h1 {
+    margin-bottom: 3%;
+}
+
+.container-text-1 p {
+    margin-bottom: 18px;
+}
+
+.container-text-2 {
+    background-color: #000000ba;
+    width: 70vw;
+    padding: 3% 0%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.container-text-2 h1 {
+    margin-bottom: 3%;
+}
+
+.container-text-2 p {
+    margin-bottom: 18px;
+}
+
+.container-text-2 p, .container-text-1 p{
+    font-size: 120%;
+}
+
+.container-text-1 h1, .container-text-2 h1 {
+    font-size: 1.6em;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .container-text-2, .container-text-1 {
+        width: 75vw;
+        padding: 3% 5%;
+    }
+
+    .container-text-2 p, .container-text-1 p {
+        font-size: 105%;
+        text-align: initial;
+    }
+
+    .container-text-1 h1, .container-text-2 h1 {
+        margin-bottom: 8%;
+    }
+
+    section {
+        padding: 4vh 0px;
+        padding-bottom: 11vh;
+        line-height: 1.5em;
+        
+    }
+
+    section > p {
+        padding-bottom: 1em;
+    }
+
+    header {
+        font-size: 100%;
+        padding: 1%;
+    }
+
+    header > h1 {
+        padding-top: 30px;
+    }
+
+    header > p {
+        padding-bottom: 30px;
+    }
+
+    section.normal > h1, section.normal > p {
+        padding: 5px;
+    }
+
+    section.imagem > p, section.imagem > h1{
+        max-width: 400px;
+        padding: 5px;
+    }
+
+    footer {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    body {
+        font-size: 1.15em;
+    }
+}
